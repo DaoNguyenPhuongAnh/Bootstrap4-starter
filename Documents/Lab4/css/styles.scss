@@ -2,6 +2,7 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
+$btn-close-color: #fffaf0;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -13,6 +14,7 @@ $carousel-item-height: 300px;
 
 .row-header{
     @include zero-margin(0px,0px);
+    background: $background-dark;
 }
 
 .row-content {
@@ -73,5 +75,17 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal-header{
+    background: $background-dark;
+    color: #fffaf0;
+}
+
+.modal-content{
+    background: $background-pale;
+}
+.close{
+    color:$btn-close-color;
 }
 
